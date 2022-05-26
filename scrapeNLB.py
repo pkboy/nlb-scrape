@@ -1,7 +1,6 @@
-from cgitb import text
 import json
 import requests
-from os import path
+import os
 from operator import itemgetter
 from bs4 import BeautifulSoup
 import re
@@ -16,10 +15,13 @@ def scrapeNlbRoute(route_id: str, route_name: str):
   s.get("https://www.nlb.com.hk/language/set/en")
   soup = None
 
+  DATA_DIR = "data"
+  if not os.path.isdir(DATA_DIR):
+      os.mkdir(DATA_DIR)
   print("Processing route: {route_id} - {route_name}".format(route_id=route_id, route_name=route_name))
   filename = "data/" + route_id + "_" + route_name.replace(" ", "").replace(">", "-To-")
 
-  if path.isfile(filename + ".htm") == False:
+  if os.path.isfile(filename + ".htm") == False:
     page = s.get(WEBSITE_BASE_URL + route_id)
     with open(filename + ".htm", "wb") as f:
       f.write(page.content)
@@ -91,13 +93,6 @@ def scrapeNlbRoute(route_id: str, route_name: str):
   json_timetable = json.dumps(data, indent=4)
   with open(filename + '.json', 'w') as f:
     f.write(json_timetable)
-    
-
-  # 2nd widget-content div
-  # p > parent item (Mon to Saturday)
-  #   table > 
-  #    dict ( "note", "time" )
-  # last p > meaning of note.
 
   return
 
@@ -108,7 +103,7 @@ def getNlbTimetables():
 
   routes = []
 
-  if path.isfile(ROUTE_LIST) == False:
+  if os.path.isfile(ROUTE_LIST) == False:
     download = requests.get(API_ROUTE_LIST)
     data = json.loads(download.content.decode("utf-8-sig"))
     with open(ROUTE_LIST, "wb") as f:
@@ -123,7 +118,6 @@ def getNlbTimetables():
   
   for route in routes:
     scrapeNlbRoute(route["routeId"], route["routeName"])
-    #time.sleep(2)
-  #scrapeNlbRoute(routes[1]["routeId"], routes[1]["routeName"])
+    time.sleep(2)
 
 getNlbTimetables()
