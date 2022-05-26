@@ -1,0 +1,58 @@
+{
+    "routeId": "90",
+    "routeName": "Mui Wo Ferry Pier > HZMB Hong Kong Port",
+    "timetables": [
+        {
+            "days": "Daily",
+            "timetable": [
+                {
+                    "time": "00:15",
+                    "note": ""
+                },
+                {
+                    "time": "05:30",
+                    "note": "#"
+                },
+                {
+                    "time": "07:25",
+                    "note": ""
+                },
+                {
+                    "time": "17:00",
+                    "note": "T"
+                },
+                {
+                    "time": "22:00",
+                    "note": ""
+                }
+            ]
+        },
+        {
+            "days": " ",
+            "timetable": [
+                {
+                    "time": "Via Mui Wo Old Town",
+                    "note": "T"
+                },
+                {
+                    "time": "Via Tung Chung Town Centre",
+                    "note": "#"
+                }
+            ]
+        },
+        {
+            "days": " ",
+            "timetable": [
+                {
+                    "time": "Via Mui Wo Old Town",
+                    "note": "T"
+                },
+                {
+                    "time": "Via Tung Chung Town Centre",
+                    "note": "#"
+                }
+            ]
+        }
+    ],
+    "notes": []
+}

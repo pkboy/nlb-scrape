@@ -1,0 +1,162 @@
+{
+    "routeId": "4",
+    "routeName": "Mui Wo Ferry Pier > Ngong Ping",
+    "timetables": [
+        {
+            "days": "Mondays to Fridays",
+            "timetable": [
+                {
+                    "time": "11:00",
+                    "note": ""
+                },
+                {
+                    "time": "12:10",
+                    "note": ""
+                },
+                {
+                    "time": "13:20",
+                    "note": ""
+                },
+                {
+                    "time": "14:30",
+                    "note": ""
+                },
+                {
+                    "time": "15:40",
+                    "note": ""
+                },
+                {
+                    "time": "16:50",
+                    "note": ""
+                }
+            ]
+        },
+        {
+            "days": "Saturdays",
+            "timetable": [
+                {
+                    "time": "10:30",
+                    "note": ""
+                },
+                {
+                    "time": "11:30",
+                    "note": ""
+                },
+                {
+                    "time": "11:50",
+                    "note": ""
+                },
+                {
+                    "time": "12:30",
+                    "note": ""
+                },
+                {
+                    "time": "13:30",
+                    "note": ""
+                },
+                {
+                    "time": "13:50",
+                    "note": ""
+                },
+                {
+                    "time": "14:30",
+                    "note": ""
+                },
+                {
+                    "time": "15:25",
+                    "note": ""
+                },
+                {
+                    "time": "15:50",
+                    "note": ""
+                },
+                {
+                    "time": "16:30",
+                    "note": ""
+                }
+            ]
+        },
+        {
+            "days": "Sundays and Public Holidays",
+            "timetable": [
+                {
+                    "time": "08:00",
+                    "note": ""
+                },
+                {
+                    "time": "08:40",
+                    "note": ""
+                },
+                {
+                    "time": "09:10",
+                    "note": ""
+                },
+                {
+                    "time": "10:05",
+                    "note": ""
+                },
+                {
+                    "time": "10:30",
+                    "note": ""
+                },
+                {
+                    "time": "11:00",
+                    "note": ""
+                },
+                {
+                    "time": "11:30",
+                    "note": ""
+                },
+                {
+                    "time": "12:00",
+                    "note": ""
+                },
+                {
+                    "time": "12:40",
+                    "note": ""
+                },
+                {
+                    "time": "13:00",
+                    "note": ""
+                },
+                {
+                    "time": "13:30",
+                    "note": ""
+                },
+                {
+                    "time": "14:00",
+                    "note": ""
+                },
+                {
+                    "time": "14:30",
+                    "note": ""
+                },
+                {
+                    "time": "15:00",
+                    "note": ""
+                },
+                {
+                    "time": "15:30",
+                    "note": ""
+                },
+                {
+                    "time": "15:55",
+                    "note": ""
+                },
+                {
+                    "time": "16:15",
+                    "note": ""
+                },
+                {
+                    "time": "17:00",
+                    "note": ""
+                },
+                {
+                    "time": "17:55",
+                    "note": ""
+                }
+            ]
+        }
+    ],
+    "notes": []
+}

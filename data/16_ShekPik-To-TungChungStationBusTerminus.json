@@ -1,0 +1,77 @@
+{
+    "routeId": "16",
+    "routeName": "Shek Pik > Tung Chung Station Bus Terminus",
+    "timetables": [
+        {
+            "days": "Saturday\u3001Sunday & Public Holidays",
+            "timetable": [
+                {
+                    "time": "10:30",
+                    "note": ""
+                },
+                {
+                    "time": "11:10",
+                    "note": ""
+                },
+                {
+                    "time": "11:50",
+                    "note": ""
+                },
+                {
+                    "time": "12:30",
+                    "note": ""
+                },
+                {
+                    "time": "13:15",
+                    "note": ""
+                },
+                {
+                    "time": "14:05",
+                    "note": "#"
+                },
+                {
+                    "time": "14:30",
+                    "note": ""
+                },
+                {
+                    "time": "15:05",
+                    "note": "#"
+                },
+                {
+                    "time": "15:45",
+                    "note": "#"
+                },
+                {
+                    "time": "16:15",
+                    "note": "#"
+                },
+                {
+                    "time": "17:00",
+                    "note": "#"
+                },
+                {
+                    "time": "17:25",
+                    "note": "#"
+                },
+                {
+                    "time": "18:00",
+                    "note": ""
+                },
+                {
+                    "time": "18:35",
+                    "note": ""
+                }
+            ]
+        },
+        {
+            "days": " ",
+            "timetable": [
+                {
+                    "time": "via Tong Fuk Correctional Institution",
+                    "note": "#"
+                }
+            ]
+        }
+    ],
+    "notes": []
+}

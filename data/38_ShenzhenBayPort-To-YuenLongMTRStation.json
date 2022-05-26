@@ -1,0 +1,20 @@
+{
+    "routeId": "38",
+    "routeName": "Shenzhen Bay Port > Yuen Long MTR Station",
+    "timetables": [
+        {
+            "days": "Dailys",
+            "timetable": [
+                {
+                    "time": "60",
+                    "note": "10:15 - 22:15"
+                },
+                {
+                    "time": "Headway (Minutes)",
+                    "note": "From Shenzhen Bay Port"
+                }
+            ]
+        }
+    ],
+    "notes": []
+}

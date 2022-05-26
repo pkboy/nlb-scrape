@@ -1,0 +1,28 @@
+{
+    "routeId": "89",
+    "routeName": "Mun Tung Estate > HZMB Hong Kong Port",
+    "timetables": [
+        {
+            "days": "Daily",
+            "timetable": [
+                {
+                    "time": "07:00",
+                    "note": "-"
+                },
+                {
+                    "time": "22:30",
+                    "note": "-"
+                },
+                {
+                    "time": "60",
+                    "note": "10:00 - 20:00"
+                },
+                {
+                    "time": "Headway (Minutes)",
+                    "note": "From\u00a0Mun Tung Estate"
+                }
+            ]
+        }
+    ],
+    "notes": []
+}

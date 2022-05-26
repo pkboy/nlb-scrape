@@ -1,0 +1,20 @@
+{
+    "routeId": "86",
+    "routeName": "Ying Tung Estate > Tung Chung Station Bus Terminus (Circular)",
+    "timetables": [
+        {
+            "days": "Daily",
+            "timetable": [
+                {
+                    "time": "15",
+                    "note": "01:00 - 02:00"
+                },
+                {
+                    "time": "Headway (Minutes)",
+                    "note": "From Ying Tung Estate"
+                }
+            ]
+        }
+    ],
+    "notes": []
+}

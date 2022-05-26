@@ -1,0 +1,24 @@
+{
+    "routeId": "33",
+    "routeName": "Tin Shui Wai (Tin Tsz Estate) > Shenzhen Bay Port",
+    "timetables": [
+        {
+            "days": "Dailys",
+            "timetable": [
+                {
+                    "time": "21:30",
+                    "note": "-"
+                },
+                {
+                    "time": "60",
+                    "note": "09:40 - 20:40"
+                },
+                {
+                    "time": "Headway (Minutes)",
+                    "note": "From\u00a0Tin Shui Wai (Tin Tsz Estate)"
+                }
+            ]
+        }
+    ],
+    "notes": []
+}

@@ -1,0 +1,82 @@
+{
+    "routeId": "30",
+    "routeName": "Yat Tung Estate > Tung Chung Station Bus Terminus (Circular)",
+    "timetables": [
+        {
+            "days": "Monday to Friday",
+            "timetable": [
+                {
+                    "time": "2-3",
+                    "note": "07:02 - 09:04"
+                },
+                {
+                    "time": "3-4",
+                    "note": "06:48 - 07:02"
+                },
+                {
+                    "time": "3-4",
+                    "note": "18:28 - 00:00"
+                },
+                {
+                    "time": "4",
+                    "note": "09:04 - 18:28"
+                },
+                {
+                    "time": "6",
+                    "note": "05:30 - 06:48"
+                },
+                {
+                    "time": "6-7",
+                    "note": "00:00 - 00:27"
+                },
+                {
+                    "time": "Headway (Minutes)",
+                    "note": "From Yat Tung"
+                }
+            ]
+        },
+        {
+            "days": " ",
+            "timetable": [
+                {
+                    "time": "4",
+                    "note": "07:00 - 00:00"
+                },
+                {
+                    "time": "6",
+                    "note": "05:30 - 07:00"
+                },
+                {
+                    "time": "6-7",
+                    "note": "00:00 - 00:27"
+                },
+                {
+                    "time": "Headway (Minutes)",
+                    "note": "From Yat Tung"
+                }
+            ]
+        },
+        {
+            "days": "Saturday\u3001Sunday & Public Holidays",
+            "timetable": [
+                {
+                    "time": "4",
+                    "note": "07:00 - 00:00"
+                },
+                {
+                    "time": "6",
+                    "note": "05:30 - 07:00"
+                },
+                {
+                    "time": "6-7",
+                    "note": "00:00 - 00:27"
+                },
+                {
+                    "time": "Headway (Minutes)",
+                    "note": "From Yat Tung"
+                }
+            ]
+        }
+    ],
+    "notes": []
+}

@@ -1,0 +1,20 @@
+{
+    "routeId": "93",
+    "routeName": "HZMB Hong Kong Port > Mui Wo Ferry Pier",
+    "timetables": [
+        {
+            "days": "Daily",
+            "timetable": [
+                {
+                    "time": "01:30",
+                    "note": ""
+                },
+                {
+                    "time": "04:30",
+                    "note": ""
+                }
+            ]
+        }
+    ],
+    "notes": []
+}

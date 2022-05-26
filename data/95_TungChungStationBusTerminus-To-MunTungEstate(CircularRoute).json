@@ -1,0 +1,125 @@
+{
+    "routeId": "95",
+    "routeName": "Tung Chung Station Bus Terminus > Mun Tung Estate  (Circular Route)",
+    "timetables": [
+        {
+            "days": "Monday to Friday",
+            "timetable": [
+                {
+                    "time": "10",
+                    "note": "08:10 - 09:00"
+                },
+                {
+                    "time": "10",
+                    "note": "17:00 - 19:20"
+                },
+                {
+                    "time": "12",
+                    "note": "15:00 - 17:00"
+                },
+                {
+                    "time": "15",
+                    "note": "09:00 - 15:00"
+                },
+                {
+                    "time": "15",
+                    "note": "19:20 - 00:20"
+                },
+                {
+                    "time": "7-8",
+                    "note": "06:10 - 08:10"
+                },
+                {
+                    "time": "Headway (Minutes)",
+                    "note": "From Tung Chung Station Bus Terminus"
+                }
+            ]
+        },
+        {
+            "days": "Saturday\u3001Sunday & Public Holidays",
+            "timetable": [
+                {
+                    "time": "10",
+                    "note": "06:10 - 07:50"
+                },
+                {
+                    "time": "15",
+                    "note": "07:50- 00:20"
+                },
+                {
+                    "time": "Headway (Minutes)",
+                    "note": "From Tung Chung Station Bus Terminus"
+                }
+            ]
+        },
+        {
+            "days": " ",
+            "timetable": [
+                {
+                    "time": "05:40",
+                    "note": ""
+                },
+                {
+                    "time": "05:55",
+                    "note": ""
+                },
+                {
+                    "time": "06:10",
+                    "note": ""
+                }
+            ]
+        },
+        {
+            "days": "Special departure from Mun Tung Estate to Tung Chung Station Bus Terminus :",
+            "timetable": [
+                {
+                    "time": "05:40",
+                    "note": ""
+                },
+                {
+                    "time": "05:55",
+                    "note": ""
+                },
+                {
+                    "time": "06:10",
+                    "note": ""
+                }
+            ]
+        },
+        {
+            "days": "Monday to Friday",
+            "timetable": [
+                {
+                    "time": "05:40",
+                    "note": ""
+                },
+                {
+                    "time": "05:55",
+                    "note": ""
+                },
+                {
+                    "time": "06:10",
+                    "note": ""
+                }
+            ]
+        },
+        {
+            "days": "Saturday\u3001Sunday & Public Holidays",
+            "timetable": [
+                {
+                    "time": "05:40",
+                    "note": ""
+                },
+                {
+                    "time": "05:55",
+                    "note": ""
+                },
+                {
+                    "time": "06:10",
+                    "note": ""
+                }
+            ]
+        }
+    ],
+    "notes": []
+}

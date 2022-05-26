@@ -1,0 +1,91 @@
+{
+    "routeId": "17",
+    "routeName": "Tai O (from Sha Tsui) > Tung Chung Station Bus Terminus",
+    "timetables": [
+        {
+            "days": "Monday to Friday (Except School Holiday and Public Holiday)",
+            "timetable": [
+                {
+                    "time": "07:10",
+                    "note": ""
+                }
+            ]
+        },
+        {
+            "days": " ",
+            "timetable": [
+                {
+                    "time": "14:05",
+                    "note": "b"
+                },
+                {
+                    "time": "15:00",
+                    "note": "b"
+                },
+                {
+                    "time": "15:45",
+                    "note": "b"
+                },
+                {
+                    "time": "16:15",
+                    "note": "b"
+                },
+                {
+                    "time": "17:00",
+                    "note": "b"
+                },
+                {
+                    "time": "17:25",
+                    "note": "b"
+                }
+            ]
+        },
+        {
+            "days": "Monday to Friday (Except Public Holiday)",
+            "timetable": [
+                {
+                    "time": "14:05",
+                    "note": "b"
+                },
+                {
+                    "time": "15:00",
+                    "note": "b"
+                },
+                {
+                    "time": "15:45",
+                    "note": "b"
+                },
+                {
+                    "time": "16:15",
+                    "note": "b"
+                },
+                {
+                    "time": "17:00",
+                    "note": "b"
+                },
+                {
+                    "time": "17:25",
+                    "note": "b"
+                }
+            ]
+        },
+        {
+            "days": " ",
+            "timetable": [
+                {
+                    "time": "via North Lantau Hospital",
+                    "note": "#"
+                },
+                {
+                    "time": "via Sha Tsui Correctional Institution",
+                    "note": "a"
+                },
+                {
+                    "time": "via Tong Fuk Correctional Institution",
+                    "note": "b"
+                }
+            ]
+        }
+    ],
+    "notes": []
+}

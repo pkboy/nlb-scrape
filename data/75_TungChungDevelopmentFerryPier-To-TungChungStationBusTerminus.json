@@ -1,0 +1,20 @@
+{
+    "routeId": "75",
+    "routeName": "Tung Chung Development Ferry Pier > Tung Chung Station Bus Terminus",
+    "timetables": [
+        {
+            "days": "Saturday\u3001Sunday & Public Holidays",
+            "timetable": [
+                {
+                    "time": "15:50",
+                    "note": ""
+                },
+                {
+                    "time": "16:30",
+                    "note": ""
+                }
+            ]
+        }
+    ],
+    "notes": []
+}

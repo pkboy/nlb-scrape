@@ -1,0 +1,24 @@
+{
+    "routeId": "34",
+    "routeName": "Shenzhen Bay Port > Tin Shui Wai (Tin Tsz Estate)",
+    "timetables": [
+        {
+            "days": "Dailys",
+            "timetable": [
+                {
+                    "time": "22:30",
+                    "note": "-"
+                },
+                {
+                    "time": "60",
+                    "note": "10:45 - 21:45"
+                },
+                {
+                    "time": "Headway (Minutes)",
+                    "note": "From\u00a0Shenzhen Bay Port"
+                }
+            ]
+        }
+    ],
+    "notes": []
+}

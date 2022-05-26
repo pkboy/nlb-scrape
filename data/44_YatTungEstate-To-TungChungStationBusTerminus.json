@@ -1,0 +1,56 @@
+{
+    "routeId": "44",
+    "routeName": "Yat Tung Estate > Tung Chung Station Bus Terminus",
+    "timetables": [
+        {
+            "days": "Daily",
+            "timetable": [
+                {
+                    "time": "00:30",
+                    "note": ""
+                },
+                {
+                    "time": "00:45",
+                    "note": ""
+                },
+                {
+                    "time": "01:00",
+                    "note": ""
+                },
+                {
+                    "time": "01:30",
+                    "note": ""
+                },
+                {
+                    "time": "02:00",
+                    "note": ""
+                },
+                {
+                    "time": "02:30",
+                    "note": ""
+                },
+                {
+                    "time": "03:00",
+                    "note": ""
+                },
+                {
+                    "time": "03:30",
+                    "note": ""
+                },
+                {
+                    "time": "04:00",
+                    "note": ""
+                },
+                {
+                    "time": "04:30",
+                    "note": ""
+                },
+                {
+                    "time": "05:00",
+                    "note": ""
+                }
+            ]
+        }
+    ],
+    "notes": []
+}

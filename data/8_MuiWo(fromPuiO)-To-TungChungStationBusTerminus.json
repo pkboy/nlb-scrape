@@ -1,0 +1,24 @@
+{
+    "routeId": "8",
+    "routeName": "Mui Wo (from Pui O) > Tung Chung Station Bus Terminus",
+    "timetables": [
+        {
+            "days": "Monday to Friday only (Except School Holidays)",
+            "timetable": [
+                {
+                    "time": "06:50",
+                    "note": ""
+                },
+                {
+                    "time": "07:20",
+                    "note": ""
+                },
+                {
+                    "time": "08:20",
+                    "note": ""
+                }
+            ]
+        }
+    ],
+    "notes": []
+}

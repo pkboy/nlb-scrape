@@ -1,0 +1,100 @@
+{
+    "routeId": "10",
+    "routeName": "Tong Fuk > Mui Wo Ferry Pier",
+    "timetables": [
+        {
+            "days": "Monday to Friday",
+            "timetable": [
+                {
+                    "time": "06:30",
+                    "note": "T"
+                },
+                {
+                    "time": "07:30",
+                    "note": ""
+                },
+                {
+                    "time": "15:25",
+                    "note": "T"
+                },
+                {
+                    "time": "17:00",
+                    "note": ""
+                }
+            ]
+        },
+        {
+            "days": "Saturday",
+            "timetable": [
+                {
+                    "time": "06:30",
+                    "note": "T"
+                },
+                {
+                    "time": "07:30",
+                    "note": ""
+                },
+                {
+                    "time": "15:10",
+                    "note": "T"
+                },
+                {
+                    "time": "17:00",
+                    "note": ""
+                }
+            ]
+        },
+        {
+            "days": "Sunday & Public Holidays",
+            "timetable": [
+                {
+                    "time": "09:30",
+                    "note": ""
+                },
+                {
+                    "time": "10:30",
+                    "note": ""
+                },
+                {
+                    "time": "11:30",
+                    "note": ""
+                },
+                {
+                    "time": "12:25",
+                    "note": ""
+                },
+                {
+                    "time": "12:50",
+                    "note": ""
+                },
+                {
+                    "time": "13:10",
+                    "note": ""
+                },
+                {
+                    "time": "13:50",
+                    "note": ""
+                },
+                {
+                    "time": "14:30",
+                    "note": ""
+                },
+                {
+                    "time": "15:30",
+                    "note": ""
+                },
+                {
+                    "time": "16:30",
+                    "note": ""
+                },
+                {
+                    "time": "18:30",
+                    "note": ""
+                }
+            ]
+        }
+    ],
+    "notes": [
+        "T via Mui Wo Old Town"
+    ]
+}

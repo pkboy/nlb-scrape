@@ -1,0 +1,126 @@
+{
+    "routeId": "9",
+    "routeName": "Mui Wo Ferry Pier > Tong Fuk",
+    "timetables": [
+        {
+            "days": "Monday to Friday",
+            "timetable": [
+                {
+                    "time": "07:05",
+                    "note": ""
+                },
+                {
+                    "time": "09:30",
+                    "note": ""
+                },
+                {
+                    "time": "14:30",
+                    "note": ""
+                },
+                {
+                    "time": "16:30",
+                    "note": ""
+                },
+                {
+                    "time": "18:40",
+                    "note": ""
+                },
+                {
+                    "time": "19:30",
+                    "note": ""
+                }
+            ]
+        },
+        {
+            "days": "Saturday",
+            "timetable": [
+                {
+                    "time": "07:05",
+                    "note": ""
+                },
+                {
+                    "time": "09:30",
+                    "note": ""
+                },
+                {
+                    "time": "13:30",
+                    "note": ""
+                },
+                {
+                    "time": "14:30",
+                    "note": ""
+                },
+                {
+                    "time": "15:30",
+                    "note": ""
+                },
+                {
+                    "time": "16:30",
+                    "note": ""
+                },
+                {
+                    "time": "17:30",
+                    "note": ""
+                },
+                {
+                    "time": "18:40",
+                    "note": ""
+                },
+                {
+                    "time": "19:30",
+                    "note": ""
+                }
+            ]
+        },
+        {
+            "days": "Sunday & Public Holidays",
+            "timetable": [
+                {
+                    "time": "09:05",
+                    "note": ""
+                },
+                {
+                    "time": "10:05",
+                    "note": ""
+                },
+                {
+                    "time": "11:05",
+                    "note": ""
+                },
+                {
+                    "time": "12:00",
+                    "note": ""
+                },
+                {
+                    "time": "12:20",
+                    "note": ""
+                },
+                {
+                    "time": "12:40",
+                    "note": ""
+                },
+                {
+                    "time": "13:20",
+                    "note": ""
+                },
+                {
+                    "time": "14:00",
+                    "note": ""
+                },
+                {
+                    "time": "15:00",
+                    "note": ""
+                },
+                {
+                    "time": "16:00",
+                    "note": ""
+                },
+                {
+                    "time": "18:00",
+                    "note": ""
+                }
+            ]
+        }
+    ],
+    "notes": []
+}

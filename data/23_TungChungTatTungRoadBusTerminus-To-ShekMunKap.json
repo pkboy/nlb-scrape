@@ -1,0 +1,222 @@
+{
+    "routeId": "23",
+    "routeName": "Tung Chung Tat Tung Road Bus Terminus > Shek Mun Kap",
+    "timetables": [
+        {
+            "days": "Monday to Saturday",
+            "timetable": [
+                {
+                    "time": "07:30",
+                    "note": ""
+                },
+                {
+                    "time": "08:25",
+                    "note": ""
+                },
+                {
+                    "time": "09:25",
+                    "note": ""
+                },
+                {
+                    "time": "10:20",
+                    "note": ""
+                },
+                {
+                    "time": "12:10",
+                    "note": ""
+                },
+                {
+                    "time": "13:30",
+                    "note": ""
+                },
+                {
+                    "time": "14:45",
+                    "note": ""
+                },
+                {
+                    "time": "16:00",
+                    "note": ""
+                },
+                {
+                    "time": "17:15",
+                    "note": ""
+                },
+                {
+                    "time": "18:05",
+                    "note": ""
+                },
+                {
+                    "time": "18:55",
+                    "note": ""
+                },
+                {
+                    "time": "19:45",
+                    "note": ""
+                },
+                {
+                    "time": "20:45",
+                    "note": ""
+                },
+                {
+                    "time": "21:45",
+                    "note": ""
+                }
+            ]
+        },
+        {
+            "days": " ",
+            "timetable": [
+                {
+                    "time": "07:30",
+                    "note": ""
+                },
+                {
+                    "time": "08:20",
+                    "note": ""
+                },
+                {
+                    "time": "09:05",
+                    "note": ""
+                },
+                {
+                    "time": "09:45",
+                    "note": ""
+                },
+                {
+                    "time": "10:30",
+                    "note": ""
+                },
+                {
+                    "time": "11:20",
+                    "note": ""
+                },
+                {
+                    "time": "12:10",
+                    "note": ""
+                },
+                {
+                    "time": "13:00",
+                    "note": ""
+                },
+                {
+                    "time": "13:50",
+                    "note": ""
+                },
+                {
+                    "time": "14:40",
+                    "note": ""
+                },
+                {
+                    "time": "15:30",
+                    "note": ""
+                },
+                {
+                    "time": "16:20",
+                    "note": ""
+                },
+                {
+                    "time": "17:10",
+                    "note": ""
+                },
+                {
+                    "time": "18:00",
+                    "note": ""
+                },
+                {
+                    "time": "18:50",
+                    "note": ""
+                },
+                {
+                    "time": "19:45",
+                    "note": ""
+                },
+                {
+                    "time": "20:45",
+                    "note": ""
+                },
+                {
+                    "time": "21:45",
+                    "note": ""
+                }
+            ]
+        },
+        {
+            "days": "Sunday & Public Holidays",
+            "timetable": [
+                {
+                    "time": "07:30",
+                    "note": ""
+                },
+                {
+                    "time": "08:20",
+                    "note": ""
+                },
+                {
+                    "time": "09:05",
+                    "note": ""
+                },
+                {
+                    "time": "09:45",
+                    "note": ""
+                },
+                {
+                    "time": "10:30",
+                    "note": ""
+                },
+                {
+                    "time": "11:20",
+                    "note": ""
+                },
+                {
+                    "time": "12:10",
+                    "note": ""
+                },
+                {
+                    "time": "13:00",
+                    "note": ""
+                },
+                {
+                    "time": "13:50",
+                    "note": ""
+                },
+                {
+                    "time": "14:40",
+                    "note": ""
+                },
+                {
+                    "time": "15:30",
+                    "note": ""
+                },
+                {
+                    "time": "16:20",
+                    "note": ""
+                },
+                {
+                    "time": "17:10",
+                    "note": ""
+                },
+                {
+                    "time": "18:00",
+                    "note": ""
+                },
+                {
+                    "time": "18:50",
+                    "note": ""
+                },
+                {
+                    "time": "19:45",
+                    "note": ""
+                },
+                {
+                    "time": "20:45",
+                    "note": ""
+                },
+                {
+                    "time": "21:45",
+                    "note": ""
+                }
+            ]
+        }
+    ],
+    "notes": []
+}

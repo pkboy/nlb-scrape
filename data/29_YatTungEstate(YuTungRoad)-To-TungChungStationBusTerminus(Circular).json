@@ -1,0 +1,50 @@
+{
+    "routeId": "29",
+    "routeName": "Yat Tung Estate (Yu Tung Road) > Tung Chung Station Bus Terminus (Circular)",
+    "timetables": [
+        {
+            "days": "Monday to Friday",
+            "timetable": [
+                {
+                    "time": "6",
+                    "note": "07:00 - 08:00"
+                },
+                {
+                    "time": "8",
+                    "note": "08:00 - 08:32"
+                },
+                {
+                    "time": "Headway (Minutes)",
+                    "note": "From Yu Tung Road"
+                }
+            ]
+        },
+        {
+            "days": " ",
+            "timetable": [
+                {
+                    "time": "No Service On Sat, Sun & Public Holidays",
+                    "note": ""
+                },
+                {
+                    "time": "No Service On School Holidays",
+                    "note": ""
+                }
+            ]
+        },
+        {
+            "days": " ",
+            "timetable": [
+                {
+                    "time": "No Service On Sat, Sun & Public Holidays",
+                    "note": ""
+                },
+                {
+                    "time": "No Service On School Holidays",
+                    "note": ""
+                }
+            ]
+        }
+    ],
+    "notes": []
+}

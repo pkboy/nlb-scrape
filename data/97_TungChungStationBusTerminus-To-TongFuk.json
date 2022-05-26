@@ -1,0 +1,20 @@
+{
+    "routeId": "97",
+    "routeName": "Tung Chung Station Bus Terminus > Tong Fuk",
+    "timetables": [
+        {
+            "days": "Saturdays\u3001Sunday & Public Holidays",
+            "timetable": [
+                {
+                    "time": "09:10",
+                    "note": ""
+                },
+                {
+                    "time": "10:10",
+                    "note": ""
+                }
+            ]
+        }
+    ],
+    "notes": []
+}

@@ -1,0 +1,24 @@
+{
+    "routeId": "78",
+    "routeName": "Yat Tung Estate > Ying Tung Estate",
+    "timetables": [
+        {
+            "days": "Monday to Friday(Expect School Holiday)",
+            "timetable": [
+                {
+                    "time": "16:05",
+                    "note": ""
+                },
+                {
+                    "time": "16:15",
+                    "note": ""
+                },
+                {
+                    "time": "From Yat Tung",
+                    "note": ""
+                }
+            ]
+        }
+    ],
+    "notes": []
+}
