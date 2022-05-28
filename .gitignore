@@ -2,5 +2,7 @@
 /lib
 /bin
 /data
+.DS_Store
 pyvenv.cfg
 *.json
+*.htm
