@@ -5,9 +5,11 @@ from operator import itemgetter
 from bs4 import BeautifulSoup
 import re
 import time
+import daysDictionary
 
 
 def scrapeNlbRoute(route_id: str, route_name: str):
+  cached_item = False
   WEBSITE_BASE_URL = "https://www.nlb.com.hk/route/detail/"
   s = requests.Session()
   # change to English
@@ -15,30 +17,59 @@ def scrapeNlbRoute(route_id: str, route_name: str):
   s.get("https://www.nlb.com.hk/language/set/en")
   soup = None
 
-  DATA_DIR = "data"
-  if not os.path.isdir(DATA_DIR):
-      os.mkdir(DATA_DIR)
+  DATA_DIR = "data/"
+  HTML_DIR = DATA_DIR + "html/"
+  JSON_DIR = DATA_DIR + "json/"
+  
+  if not os.path.isdir(HTML_DIR):
+      os.makedirs(HTML_DIR)
+  
+  if not os.path.isdir(JSON_DIR):
+      os.makedirs(JSON_DIR)
+  
   print("Processing route: {route_id} - {route_name}".format(route_id=route_id, route_name=route_name))
-  filename = "data/" + route_id + "_" + route_name.replace(" ", "").replace(">", "-To-")
+  filename = route_id + "_" + route_name.replace(" ", "").replace(">", "-To-")
 
-  if os.path.isfile(filename + ".htm") == False:
+  # Download html
+  if os.path.isfile(HTML_DIR + filename + ".htm") == False:
     page = s.get(WEBSITE_BASE_URL + route_id)
-    with open(filename + ".htm", "wb") as f:
+    with open(HTML_DIR + filename + ".htm", "wb", encoding='utf-8') as f:
       f.write(page.content)
     soup = BeautifulSoup(page.content, "html.parser")
   else:
-    with open(filename + ".htm", "r") as f:
+    cached_item = True
+    with open(HTML_DIR + filename + ".htm", "r", encoding='utf-8') as f:
       soup = BeautifulSoup(f.read(), "html.parser")
 
   divs = soup.find_all("div", class_="widget-content")
+  
+  origin = route_name.split(">")[0].strip()
+  destination = route_name.split(">")[1].strip()
+
   #print(divs[1])
   ps = divs[1].find_all("p")
-  data = { "routeId" : route_id, "routeName" : route_name, "timetables" : [], "notes" : [] }
+  data = { 
+    "routeCode" : route_id, 
+    "routeName" : route_name, 
+    "origin": origin, 
+    "destination": destination, 
+    "departures" : [], 
+    "remarks" : []
+  }
+
   for p in ps:
-    timetable_data = { "days" : "", "timetable" : [] }
+    if p.text.strip() == "":
+      continue
+    timetable_data = { "serviceTimes" : [] }
     table = p.find_next_sibling("table")
     if table:
-      timetable_data["days"] = p.text.replace('\u00a0', ' ')
+      days = p.text.strip()
+      dayObj = daysDictionary.get_day_object(days)
+      # print(dayObj)
+      # see if this day exists in our days -> dictionary
+      # dictionary will have to be manually updated.
+      timetable_data = { **dayObj, **timetable_data }
+      # timetable_data["days"] = p.text.strip()
       timetable = []
       trs = table.find_all("tr")
       for tr in trs:
@@ -51,6 +82,7 @@ def scrapeNlbRoute(route_id: str, route_name: str):
         # some rows have multiple blanks as well.
 
         # check if note is in front or behind.
+        # remark is used instead of note in the data
         is_time_first = False
         row_items = []
         for i in range(0, len(tds)):
@@ -67,7 +99,7 @@ def scrapeNlbRoute(route_id: str, route_name: str):
           row_items.reverse()
         
         # so now the first item will be a time.
-        curr_item = { "time": "", "note": "" }
+        curr_item = { "time": "", "remark": "" }
         for i in range(0, len(row_items)):
           if i == 0:
             curr_item["time"] = row_items[i]
@@ -75,26 +107,27 @@ def scrapeNlbRoute(route_id: str, route_name: str):
             match = re.match(r'^[0-2][0-9]:[0-5][0-9]$', row_items[i])
             if match:
               timetable.append(curr_item)
-              curr_item = { "time": row_items[i], "note": "" }
+              curr_item = { "time": row_items[i], "remark": "" }
             else:
-              if curr_item["note"]:
-                curr_item["note"] = curr_item["note"] + " " + row_items[i]
+              #print(curr_item)
+              if curr_item["remark"]:
+                curr_item["remark"] = curr_item["remark"] + " " + row_items[i]
               else:
-                curr_item["note"] = row_items[i]
+                curr_item["remark"] = row_items[i]
         timetable.append(curr_item)
       # sort timetable
       sorted_timetable = sorted(timetable, key=itemgetter("time"))
-      timetable_data["timetable"] = sorted_timetable
-      data["timetables"].append(timetable_data)
+      timetable_data["serviceTimes"] = sorted_timetable
+      data["departures"].append(timetable_data)
     else:
       if str.strip(p.text):
-        data["notes"].append(p.text)
+        data["remarks"].append(p.text)
 
-  json_timetable = json.dumps(data, indent=4)
-  with open(filename + '.json', 'w') as f:
+  json_timetable = json.dumps(data, indent=4, ensure_ascii=True)
+  with open(JSON_DIR + filename + '.json', 'w', encoding='utf-8') as f:
     f.write(json_timetable)
 
-  return
+  return cached_item
 
 def getNlbTimetables():
   API_ROUTE_LIST = "https://rt.data.gov.hk/v1/transport/nlb/route.php?action=list"
@@ -117,7 +150,8 @@ def getNlbTimetables():
         routes.append({ "routeId" : route["routeId"], "routeName" : route["routeName_e"]  })
   
   for route in routes:
-    scrapeNlbRoute(route["routeId"], route["routeName"])
-    time.sleep(2)
+    cached_item = scrapeNlbRoute(route["routeId"], route["routeName"])
+    if not cached_item:
+      time.sleep(2)
 
 getNlbTimetables()
