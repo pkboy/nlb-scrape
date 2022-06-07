@@ -132,7 +132,9 @@ def scrapeNlbRoute(route_id: str, route_name: str):
         remark = str.strip(p.text[firstSpaceIndex:])
         data["remarks"].append({ "code" : code, "remark" : remark })
 
-  routes_obj = { "routes": [ data ]}
+  remarks_obj = data["remarks"]
+  del data["remarks"]
+  routes_obj = { "routes": [ data ], "remarks" : remarks_obj }
 
   json_timetable = json.dumps(routes_obj, indent=4, ensure_ascii=True)
   with open(JSON_DIR + filename + ".json", "w", encoding="utf-8") as f:
