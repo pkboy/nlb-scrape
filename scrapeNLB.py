@@ -33,12 +33,12 @@ def scrapeNlbRoute(route_id: str, route_name: str):
   # Download html
   if os.path.isfile(HTML_DIR + filename + ".htm") == False:
     page = s.get(WEBSITE_BASE_URL + route_id)
-    with open(HTML_DIR + filename + ".htm", "wb", encoding='utf-8') as f:
+    with open(HTML_DIR + filename + ".htm", "wb", encoding="utf-8") as f:
       f.write(page.content)
     soup = BeautifulSoup(page.content, "html.parser")
   else:
     cached_item = True
-    with open(HTML_DIR + filename + ".htm", "r", encoding='utf-8') as f:
+    with open(HTML_DIR + filename + ".htm", "r", encoding="utf-8") as f:
       soup = BeautifulSoup(f.read(), "html.parser")
 
   divs = soup.find_all("div", class_="widget-content")
@@ -88,7 +88,7 @@ def scrapeNlbRoute(route_id: str, route_name: str):
         for i in range(0, len(tds)):
           text = str.strip(tds[i].text)
           if text:
-            match = re.match(r'^[0-2][0-9]:[0-5][0-9]$', text)
+            match = re.match(r"^[0-2][0-9]:[0-5][0-9]$", text)
             if match:
               if i == 0:
                 is_time_first = True
@@ -104,7 +104,7 @@ def scrapeNlbRoute(route_id: str, route_name: str):
           if i == 0:
             curr_item["time"] = row_items[i]
           else:
-            match = re.match(r'^[0-2][0-9]:[0-5][0-9]$', row_items[i])
+            match = re.match(r"^[0-2][0-9]:[0-5][0-9]$", row_items[i])
             if match:
               timetable.append(curr_item)
               curr_item = { "time": row_items[i], "remark": "" }
@@ -121,10 +121,21 @@ def scrapeNlbRoute(route_id: str, route_name: str):
       data["departures"].append(timetable_data)
     else:
       if str.strip(p.text):
-        data["remarks"].append(p.text)
+        # the last few lines are supposed to be remarks
+        # code is the first string before space
+        firstSpaceIndex = 0
+        try:
+          firstSpaceIndex = p.text.index(" ")
+        except:
+          pass
+        code = p.text[:firstSpaceIndex]
+        remark = str.strip(p.text[firstSpaceIndex:])
+        data["remarks"].append({ "code" : code, "remark" : remark })
 
-  json_timetable = json.dumps(data, indent=4, ensure_ascii=True)
-  with open(JSON_DIR + filename + '.json', 'w', encoding='utf-8') as f:
+  routes_obj = { "routes": [ data ]}
+
+  json_timetable = json.dumps(routes_obj, indent=4, ensure_ascii=True)
+  with open(JSON_DIR + filename + ".json", "w", encoding="utf-8") as f:
     f.write(json_timetable)
 
   return cached_item

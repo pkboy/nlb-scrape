@@ -13,13 +13,10 @@ else:
     with open(DICT_FILENAME, 'r') as f:
       DATA = json.load(f)
 
-# "dayStart": 1,
-# "dayEnd": 5,
-# "runOnPublicHoliday": 1,
-# "serviceDaysString": "Mondays to Fridays except public holidays",
-
 def format_day_string(dayStr: str):
   # take away the \uxxxx and replace with spaces, page was utf-8 encoded.
+  # doing it the manual way because it looks like human input error so not
+  # concerned with the encoding mix up
   dayStr = dayStr.replace(u'\xa0', u' ')
   dayStr = dayStr.replace(u'\u3001', u', ')
   dayStr = dayStr.replace('&', 'and')
@@ -46,13 +43,11 @@ def build_dict_file():
   path = Path("data/html/")
   for p in path.rglob("*"):
     if p.suffix == ".htm":
-      # print(str(p.resolve()))
       soup = None
       with open(p, "r", encoding='utf-8') as f:
         soup = BeautifulSoup(f.read(), "html.parser")
 
       divs = soup.find_all("div", class_="widget-content")
-      #print(divs[1])
       ps = divs[1].find_all("p")
 
       for p in ps:
@@ -77,9 +72,9 @@ def build_dict_file():
               "runOnSchoolHoliday": 1,
               "serviceDaysString": days
             })
-  # print(DATA)
   with open(DICT_FILENAME, 'w') as f:
     json_string = json.dumps(DATA, indent=4)
     f.write(json_string)
 
-#build_dict_file()
+# inits the file
+build_dict_file()

@@ -2,6 +2,7 @@
 /lib
 /bin
 /data
+/__pycache__
 .DS_Store
 pyvenv.cfg
 *.json

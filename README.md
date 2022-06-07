@@ -9,7 +9,20 @@ Install the required packages:
 ```pip install beautifulsoup4```
 
 Run
+
+```python daysDictionary.py```
+
+daysDictionary builds the daysDictionary json file.  
+Each entry in the array has a serviceDaysString which is taken from the heading of each table in HTML.  
+You're free to define the string with the other key-value pairs, but for me I start the week on Monday so for a service string of:  
+  
+"Monday to Friday", I define ```dayStart``` as 0 and ```dayEnd``` as 4.
+
 ```python scrapeNLB.py```
+
+## JSON
+
+Json structure matches the one used in my [https://github.com/pkboy/sunferryhktimetable](https://github.com/pkboy/sunferryhktimetable) project that converts that data from CSV to JSON.
 
 ## Issues
 
