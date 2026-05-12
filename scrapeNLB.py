@@ -33,12 +33,12 @@ def scrapeNlbRoute(route_id: str, route_name: str):
   # Download html
   if os.path.isfile(HTML_DIR + filename + ".htm") == False:
     page = s.get(WEBSITE_BASE_URL + route_id)
-    with open(HTML_DIR + filename + ".htm", "wb", encoding="utf-8") as f:
+    with open(HTML_DIR + filename + ".htm", "wb") as f:
       f.write(page.content)
     soup = BeautifulSoup(page.content, "html.parser")
   else:
     cached_item = True
-    with open(HTML_DIR + filename + ".htm", "r", encoding="utf-8") as f:
+    with open(HTML_DIR + filename + ".htm", "r") as f:
       soup = BeautifulSoup(f.read(), "html.parser")
 
   divs = soup.find_all("div", class_="widget-content")

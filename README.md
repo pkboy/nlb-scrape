@@ -1,24 +1,31 @@
 # nlb-scrape
+
 New Lantao Bus Company provides an [API](https://data.gov.hk/en-data/dataset/nlb-bus-nlb-bus-service) through [data.gov.hk](https://data.gov.hk/). They provide a route list, stops for a route, and ETA for stops, but not a timetable for each route. They do have these timetables available on their [website](http://www.newlantaobus.com/), so I created this project to scrape the timetables from there.
 
 Route List is obtained from their API. Scraper iterates through the route IDs and the relevant website URL then scrapes the timetable.
 
 ## Usage
 
+Create python environment
+`python -m venv .venv`
+
+Activate environment to local directory
+`source .venv/bin/activate`
+
 Install the required packages:
-```pip install beautifulsoup4```
+`pip install beautifulsoup4 requests`
 
 Run
 
-```python daysDictionary.py```
+`python daysDictionary.py`
 
 daysDictionary builds the daysDictionary json file.  
 Each entry in the array has a serviceDaysString which is taken from the heading of each table in HTML.  
-You're free to define the string with the other key-value pairs, but for me I start the week on Monday so for a service string of:  
-  
-"Monday to Friday", I define ```dayStart``` as 0 and ```dayEnd``` as 4.
+You're free to define the string with the other key-value pairs, but for me I start the week on Monday so for a service string of:
 
-```python scrapeNLB.py```
+"Monday to Friday", I define `dayStart` as 0 and `dayEnd` as 4.
+
+`python scrapeNLB.py`
 
 ## JSON
 
