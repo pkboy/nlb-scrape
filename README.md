@@ -7,17 +7,17 @@ Route List is obtained from their API. Scraper iterates through the route IDs an
 ## Usage
 
 Create python environment
-`python -m venv .venv`
+```python -m venv .venv```
 
 Activate environment to local directory
-`source .venv/bin/activate`
+```source .venv/bin/activate```
 
 Install the required packages:
-`pip install beautifulsoup4 requests`
+```pip install beautifulsoup4 requests```
 
 Run
 
-`python daysDictionary.py`
+```python daysDictionary.py```
 
 daysDictionary builds the daysDictionary json file.  
 Each entry in the array has a serviceDaysString which is taken from the heading of each table in HTML.  
@@ -25,7 +25,7 @@ You're free to define the string with the other key-value pairs, but for me I st
 
 "Monday to Friday", I define `dayStart` as 0 and `dayEnd` as 4.
 
-`python scrapeNLB.py`
+```python scrapeNLB.py```
 
 ## JSON
 
